@@ -9,6 +9,7 @@ const Index:NextPage = ( ): JSX.Element =>{
           <a>
             Blog
           </a>
+            <br/>
         </Link>
         <Link href={'/products'} >
           <a>
