@@ -1,11 +1,11 @@
-import {NextPage} from "next";
+import {NextPage} from 'next';
 
-const Index: NextPage = ( ): JSX.Element =>{
-    return (
-        <h2>
-            Blog posts
-        </h2>
-    );
-}
+const Index: NextPage = (): JSX.Element => {
+	return (
+		<>
+			<p > Blog posts</p >
+		</>
+	);
+};
 
 export default Index;
