@@ -65,7 +65,7 @@ export const getStaticProps: GetStaticProps = async () => {
 			users,
 			message: 'Hello World'
 		},
-		revalidate: 2
+		revalidate: 1
 	};
 };
 
