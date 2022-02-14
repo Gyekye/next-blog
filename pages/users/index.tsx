@@ -40,8 +40,8 @@ const Users: NextPage = ({users}: InferGetStaticPropsType<typeof getStaticProps>
 								<h3 >{user.phone}</h3 >
 								<p >{user.username}</p >
 								<p >{user.name} says {user.company.catchPhrase}</p >
-								<Link href={`/users/${user.id}`} passHref={true}>
-									<button >View more</button >
+								<Link href={`/users/${user.id}`} passHref={true} >
+									<a >View more</a >
 								</Link >
 							</div >
 						);

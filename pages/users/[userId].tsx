@@ -2,6 +2,7 @@ import {GetStaticPaths, GetStaticProps, InferGetStaticPropsType, NextPage} from 
 import {User} from './index';
 
 const User: NextPage = ({user}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
+
 	return (
 		<>
 			<div >
@@ -12,8 +13,9 @@ const User: NextPage = ({user}: InferGetStaticPropsType<typeof getStaticProps>):
 	);
 };
 
-// This function gets called at build time
+
 export const getStaticPaths: GetStaticPaths = async () => {
+
 	//* Call an external API endpoint for the users Data
 	const response: Response = await fetch('https://jsonplaceholder.typicode.com/users');
 	const users: User[] = await response.json();
@@ -28,19 +30,21 @@ export const getStaticPaths: GetStaticPaths = async () => {
 			}
 		};
 	});
-	return {paths, fallback: false};
+	return {paths, fallback: 'blocking'};
 };
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
+
 	//* Pass the userId from params to fetch the user Data
 	// @ts-ignore
-	const response: Response = await fetch('https://jsonplaceholder.typicode.com/users/' + params.userId);
+	const response: Response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`);
 	const user: User = await response.json();
 
 	//* Return the user as props
 	return {
 		props: {
 			//* Pass fetched Data Here
+			//* Passed user data to the page component
 			user
 		}
 	};
