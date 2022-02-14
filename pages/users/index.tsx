@@ -1,6 +1,7 @@
 import {GetStaticProps, InferGetStaticPropsType, NextPage} from 'next';
+import Link from 'next/link';
 
-type User = {
+export type User = {
 	id: number,
 	name: string,
 	username: string,
@@ -25,19 +26,23 @@ type User = {
 };
 
 //? InferGetStaticPropsType< type of getStaticProps > infers types for your props
-const Users: NextPage = ({users, message}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
+const Users: NextPage = ({users}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
 	return (
 		<>
 			<h1 > List of users on th app </h1 >
 			{
 				users.map(
-					(user: any) => {
+					(user: User) => {
 						return (
-							<div >
+							<div key={user.id} style={{border: '1px solid green'}} >
 								<h1 >{user.username}</h1 >
 								<h2 >{user.email}</h2 >
 								<h3 >{user.phone}</h3 >
-								<p>{user.username} says {message}</p>
+								<p >{user.username}</p >
+								<p >{user.name} says {user.company.catchPhrase}</p >
+								<Link href={`/users/${user.id}`} passHref={true}>
+									<button >View more</button >
+								</Link >
 							</div >
 						);
 					}
