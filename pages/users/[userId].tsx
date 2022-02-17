@@ -13,29 +13,28 @@ const User: NextPage = ({user}: InferGetStaticPropsType<typeof getStaticProps>):
 	);
 };
 
-
 export const getStaticPaths: GetStaticPaths = async () => {
 
-	//* Call an external API endpoint for the users Data
+	//* Calls  an external API endpoint for the users Data
 	const response: Response = await fetch('https://jsonplaceholder.typicode.com/users');
 	const users: User[] = await response.json();
 
-	//* Get the paths( ids ) we want to pre-render from each user Data
-	const paths = users.map((user: User) => {
-		//* Return a path object with user.id as params
+	//* Gets the paths( ids ) we want to pre-render from each user Data
+	const paths: { params: { userId: string } }[] = users.map((user: User) => {
+		//* Returns a path object with user.id as params
 		return {
 			params: {
 				//* Converts the user.id to a string
 				userId: user.id.toString()
 			}
-		};
+		}
 	});
-	return {paths, fallback: 'blocking'};
+	return {paths, fallback: false};
 };
 
 export const getStaticProps: GetStaticProps = async ({params}) => {
 
-	//* Pass the userId from params to fetch the user Data
+	//* Passes the userId from params to fetch the user Data
 	// @ts-ignore
 	const response: Response = await fetch(`https://jsonplaceholder.typicode.com/users/${params.userId}`);
 	const user: User = await response.json();
@@ -43,12 +42,12 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 	//* Return the user as props
 	return {
 		props: {
-			//* Pass fetched Data Here
-			//* Passed user data to the page component
+			//* Passes fetched Data Here
+			//* Passes user data to the page component
 			user
 		}
-	};
+	}
 };
 
-//! Export User Page
+//! Exports User Page
 export default User;
