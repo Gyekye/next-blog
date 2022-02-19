@@ -1,9 +1,39 @@
 {
   "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+    {
+      "id": 1,
+      "title": "Pre-Rendering",
+      "author": "Nextjs Team"
+    },
+    {
+      "id": 2,
+      "title": "GetStaticProps",
+      "author": "Static Site Generation"
+    },
+    {
+      "id": 4,
+      "title": "GetServerSideProps",
+      "author": "Server Side Rendering"
+    },
+    {
+      "id": 5,
+      "title": "Static Incremental Regeneration",
+      "author": "Nextjs Team"
+    },
+    {
+      "id": 7,
+      "title": "Dynamic Parameters",
+      "author": "Nextjs Team"
+    }
   ],
   "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "name": "typicode"
+  }
 }
