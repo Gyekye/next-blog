@@ -49,5 +49,7 @@ export const getStaticProps: GetStaticProps = async ({params}) => {
 	}
 };
 
+
+
 //! Exports User Page
 export default User;
