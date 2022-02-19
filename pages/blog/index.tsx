@@ -28,7 +28,6 @@ const Index: NextPage = ({posts}: InferGetServerSidePropsType<typeof getServerSi
 };
 
 //* Getting list of posts with getServerSideProps
-
 export const getServerSideProps: GetServerSideProps = async (context) => {
 	//? getStaticProps pre-renders HTML pages per request on the server then sends the generated HTML back as a response
 	const response: Response = await fetch(' http://localhost:3000/posts/');
