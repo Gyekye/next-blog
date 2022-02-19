@@ -26,11 +26,36 @@
       "author": "Nextjs"
     }
   ],
-  "comments": [
+  "products": [
+    {
+      "id": 18,
+      "name": "Nike Premium",
+      "price": 1020
+    },
+    {
+      "id": 17,
+      "name": "Nvidia GTX 1080",
+      "price": 1040
+    },
+    {
+      "id": 41,
+      "name": "Alpa Beta",
+      "price": 160
+    },
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Strange Product",
+      "price": 1060
+    },
+    {
+      "id": 31,
+      "name": "some Game",
+      "price": 7100
+    },
+    {
+      "id": 21,
+      "name": "Killer Game",
+      "price": 1070
     }
   ],
   "profile": {
