@@ -1,29 +1,7 @@
 import {GetStaticProps, InferGetStaticPropsType, NextPage} from 'next';
 import Link from 'next/link';
+import {User} from '../../utils/types';
 
-export type User = {
-	id: number,
-	name: string,
-	username: string,
-	email: string,
-	address: {
-		street: string,
-		suite: string,
-		city: string,
-		zipcode: string,
-		geo: {
-			lat: string,
-			lng: string
-		}
-	},
-	phone: string,
-	website: string,
-	company: {
-		name: string,
-		catchPhrase: string,
-		bs: string
-	}
-};
 
 //? InferGetStaticPropsType< type of getStaticProps > infers types for your props
 const Users: NextPage = ({users}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {

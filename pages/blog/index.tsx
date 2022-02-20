@@ -1,11 +1,5 @@
 import {GetServerSideProps, InferGetServerSidePropsType, NextPage} from 'next';
-
-//* Type for post
-export type Post = {
-	id: number,
-	title: string,
-	author: string
-}
+import {Post} from '../../utils/types';
 
 const Index: NextPage = ({posts}: InferGetServerSidePropsType<typeof getServerSideProps>): JSX.Element => {
 	return (
@@ -28,7 +22,7 @@ const Index: NextPage = ({posts}: InferGetServerSidePropsType<typeof getServerSi
 };
 
 //* Getting list of posts with getServerSideProps
-export const getServerSideProps: GetServerSideProps = async (context) => {
+export const getServerSideProps: GetServerSideProps = async () => {
 	//? getStaticProps pre-renders HTML pages per request on the server then sends the generated HTML back as a response
 	const response: Response = await fetch(' http://localhost:3000/posts/');
 	const posts: Post[] = await response.json();
