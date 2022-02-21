@@ -1,26 +1,22 @@
+import {Header} from '@/components/header';
+import {Featured} from '@/components/Hero/featured';
+import {motion} from 'framer-motion';
 import {NextPage} from 'next';
-import Link from 'next/link';
 
 //* A next page that returns a jsx element
 const Index: NextPage = (): JSX.Element => {
+	const variants = {
+		hidden: {opacity: 0},
+		visible: {opacity: 1},
+	};
 	return (
-		<section >
-			<Link href={'/blog'} >
-				<a >
-					Blog
-				</a >
-			</Link >
-			<Link href={'/products'} >
-				<a >
-					Products
-				</a >
-			</Link >
-			<Link href={'/users'} >
-				<a >
-					Users
-				</a >
-			</Link >
-		</section >
+		<motion.div
+			animate={'visible'} variants={variants} initial={'hidden'}
+			transition={{ease: 'linear', duration: .5}}
+		>
+			<Header />
+			<Featured />
+		</motion.div >
 	);
 };
 
