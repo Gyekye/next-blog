@@ -31,8 +31,8 @@ export const Main: FC = (): JSX.Element => {
 					<p className={`text-7xl whitespace-normal text-opacity-80 text-white font-semibold 
 					group-hover:text-opacity-100 group-hover:cursor-default transition-all duration-200 ease-linear delay-150`} >
 
-						<span className={`font-extrabold text-secondaryLight`} >HANA</span >,
-						                                                                    the blog for web developers.
+						<span className={`font-extrabold text-white`} >HA</span >
+						<span className={`font-extrabold text-secondaryLight`} >NA</span >, the blog for web developers.
 					</p >
 					<p className={`text-xl w-5/6 whitespace-normal py-8 text-opacity-70 text-white 
 					group-hover:text-opacity-100 group-hover:cursor-default transition-all duration-200 ease-linear delay-150`} >

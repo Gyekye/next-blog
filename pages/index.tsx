@@ -1,7 +1,8 @@
+import {Footer} from '@/components/footer';
 import {Header} from '@/components/header';
 import {End} from '@/components/Hero/end';
-import {Main} from '@/components/Hero/main';
 import {Flipped} from '@/components/Hero/flipped';
+import {Main} from '@/components/Hero/main';
 import {Normal} from '@/components/Hero/normal';
 import {motion} from 'framer-motion';
 import {NextPage} from 'next';
@@ -19,10 +20,11 @@ const Index: NextPage = (): JSX.Element => {
 		>
 			<Header />
 			<Main />
-			<Normal feature={{image:'', description:''}} />
-			<Flipped feature={{image:'', description:''}} />
-			<Normal feature={{image:'', description:''}} />
+			<Normal feature={{image: '', description: ''}} />
+			<Flipped feature={{image: '', description: ''}} />
+			<Normal feature={{image: '', description: ''}} />
 			<End />
+			<Footer />
 		</motion.div >
 	);
 };
