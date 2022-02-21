@@ -1,13 +1,4 @@
 //* Typescript types for the project
-
-export type Post = {
-	id: number,
-	title: string,
-	author: string | undefined,
-	body: string
-	date: string
-}
-
 export type Product = {
 	id: number,
 	name: string,
