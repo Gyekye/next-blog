@@ -4,7 +4,7 @@ import {motion} from 'framer-motion';
 import Image from 'next/image';
 import {FC} from 'react';
 
-export const Featured: FC = (): JSX.Element => {
+export const Main: FC = (): JSX.Element => {
 
 	const heroTextVariants = {
 		initialState: {y: 200},
@@ -16,7 +16,9 @@ export const Featured: FC = (): JSX.Element => {
 	};
 
 	const transition = {
-		duration: 0.9
+		duration: 0.9,
+		type: 'spring',
+		stiffness: 150
 	};
 
 	return (
@@ -26,11 +28,11 @@ export const Featured: FC = (): JSX.Element => {
 				<motion.div initial={'initialState'} animate={'animatedState'} variants={heroTextVariants}
 				            transition={transition}
 				            className={`group w-3/6 h-full flex flex-col justify-center text-left `} >
-					<p className={`text-8xl whitespace-normal text-opacity-70 text-white font-semibold 
+					<p className={`text-7xl whitespace-normal text-opacity-80 text-white font-semibold 
 					group-hover:text-opacity-100 group-hover:cursor-default transition-all duration-200 ease-linear delay-150`} >
 
 						<span className={`font-extrabold text-secondaryLight`} >HANA</span >,
-							the best blog for web developers.
+						                                                                    the blog for web developers.
 					</p >
 					<p className={`text-xl w-5/6 whitespace-normal py-8 text-opacity-70 text-white 
 					group-hover:text-opacity-100 group-hover:cursor-default transition-all duration-200 ease-linear delay-150`} >
@@ -51,7 +53,7 @@ export const Featured: FC = (): JSX.Element => {
 				            className={`w-3/6 h-full flex items-center justify-end ml-4`} >
 					<Image
 						src={featuredPostImage}
-						alt={'Featured Post'}
+						alt={'Main Post'}
 						priority
 					/>
 				</motion.div >

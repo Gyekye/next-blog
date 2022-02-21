@@ -1,7 +1,7 @@
 // @ts-ignore
 // @ts-ignore
 import {UilAngleRight, UilArrowRight} from '@iconscout/react-unicons';
-import featuredPostImage from '@public/post-image/feature-1.png';
+import featuredPostImage from '@public/post-image/feature-2.png';
 import {motion} from 'framer-motion';
 import Image from 'next/image';
 import {FC} from 'react';
@@ -10,13 +10,13 @@ import {FC} from 'react';
 interface Props {
 	feature: {
 		image: string | undefined,
-		description: string
+		description: string,
 	};
 }
 
 const initialState = {
-	x:-300,
-	opacity:0,
+	x: 300,
+	opacity:0
 };
 
 const InViewState = {
@@ -25,24 +25,31 @@ const InViewState = {
 };
 
 const transition = {
-	duration: 1,
-	delay:.1,
-
+	duration: 1.5,
+	delay:.1
 };
 
-export const Normal: FC<Props> = (): JSX.Element => {
+export const Flipped: FC<Props> = (): JSX.Element => {
 	return (
 		<section
 			className={`hidden lg:block lg:w-full lg:h-[36rem] lg:flex justify-center items-center lg:bg-white`} >
-			<div
-				className={'w-8/12 h-full flex bg-white z-10 '} >
-				<motion.div initial={initialState} whileInView={InViewState} transition={transition} className={'w-3/6 h-full p-6 bg-white flex flex-col justify-center'} >
+			<div className={'w-8/12 h-full flex bg-white z-10 p-8'} >
+				<div className={'w-3/6 h-full p-6 bg-white flex justify-center items-center'} >
+					<Image
+						src={featuredPostImage}
+						alt={'Main Post'}
+						priority
+					/>
+				</div >
+				<motion.div initial={initialState} whileInView={InViewState} transition={transition}
+				            className={'w-3/6 h-full bg-white flex flex-col justify-center'} >
 					<h2 className={'w-11/12 text-4xl font-semibold pb-6'} >
-						New Payment Links features to help you sell more, faster
+						New Radar features help you better manage fraud
 					</h2 >
 					<p className={'w-10/12 text-lg pb-4'} >
-						Payment Links lets you create a payment page that you can share with your customers in just a
-						few clicks—no code required. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum, ea.
+						Stripe Radar is a machine-learning-based fraud detection solution fully integrated with the
+						Stripe platform. We recently shipped a series of improvements to Radar to help businesses better
+						prevent fraud and more efficiently manage fraud workflows.
 					</p >
 					<a href={'#'}
 					   className={'w-fit group flex uppercase font-medium text-md text-secondary ' +
@@ -54,18 +61,11 @@ export const Normal: FC<Props> = (): JSX.Element => {
 							<UilAngleRight />
 						</div >
 						<div
-							className={'-translate-x-[31px] opacity-0 transition-all duration-100 delay-100 ease-linear group-hover:-translate-x-6 group-hover:opacity-100'} >
+							className={'-translate-x-8 opacity-0 z-10 transition-all duration-200 delay-150 ease-linear group-hover:-translate-x-6 group-hover:opacity-100'} >
 							<UilArrowRight />
 						</div >
 					</a >
 				</motion.div >
-				<div className={'w-3/6 h-full p-8 bg-white flex justify-center items-center'} >
-					<Image
-						src={featuredPostImage}
-						alt={'Main Post'}
-						priority
-					/>
-				</div >
 			</div >
 		</section >
 	);
