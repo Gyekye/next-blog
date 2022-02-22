@@ -8,7 +8,7 @@ import {FunctionComponent} from 'react';
 export const FeaturedPostCard: FunctionComponent<Props> = ({post}): JSX.Element => {
 	return (
 		<>
-			<article className={`h-[27rem] p-4 mt-[5rem] mb-[18rem] flex bg-white rounded-lg z-10 shadow-2xl`} >
+			<article className={`h-[28rem] p-4 mt-[5rem] mb-[15rem] flex bg-white rounded-lg z-10 shadow-2xl`} >
 				<div className={`w-6/12 h-full p-5`} >
 					<p className={`text-primary pb-4 font-medium capitalize text-opacity-70 
 					hover:text-primaryDark hover:text-opacity-100 hover:cursor-pointer transition-all duration-150 delay-75 ease-linear`}

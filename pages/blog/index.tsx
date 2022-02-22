@@ -1,3 +1,4 @@
+import {Footer} from '@/components/footer';
 import {FeaturedPostCard} from '@/components/post/featuredPostCard';
 import {NormalPostCard} from '@/components/post/normalPostCard';
 import Logo from '@public/svg/logo-2.svg';
@@ -9,7 +10,7 @@ import Link from 'next/link';
 const Blog: NextPage = ({posts, firstFeaturedPost, noFeaturedPost}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
 	return (
 		<>
-			<div className={`bg-background flex justify-center`} >
+			<div className={`bg-background flex flex-col items-center justify-center`} >
 				<div className={`w-7/12 flex flex-col border-x-2 border-x-border border-dashed`} >
 					<nav className={`w-full flex justify-between  border-b-2 border-b-border border-dashed`} >
 						<div className={`flex items-center px-4`} >
@@ -65,6 +66,7 @@ const Blog: NextPage = ({posts, firstFeaturedPost, noFeaturedPost}: InferGetStat
 							<p >No post</p >
 					}
 				</div >
+				<Footer />
 			</div >
 		</>
 	);
@@ -105,6 +107,8 @@ export const getStaticProps: GetStaticProps = async () => {
 				posts,
 				noFeaturedPost: true
 			},
+			//* ISR, revalidate props data every 2 seconds
+			revalidate: 1
 		};
 	}
 };
