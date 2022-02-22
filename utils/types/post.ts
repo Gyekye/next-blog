@@ -1,8 +1,14 @@
 export type Post = {
 	id: number,
 	title: string,
+	summary:string,
 	image:string | undefined,
-	author: string | undefined,
-	body: string
-	date: string
+	body: string,
+	category: string,
+	is_featured: boolean,
+	author: {
+		profile_image: string | undefined,
+		first_name: string,
+		last_name: string
+	}
 }

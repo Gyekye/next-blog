@@ -1,64 +1,54 @@
 {
   "posts": [
     {
-      "id": 1,
-      "title": "Pre-Rendering",
-      "author": "Nextjs Team"
+      "id": 2,
+      "title": "New Payment Links features to help you sell more, faster",
+      "image": "https://images.ctfassets.net/fzn2n1nzq965/45s4Z1lYia4ta1Mkiqjcez/821399e8364b2c47162edf4d5efa2f97/01_Checkout-session_multi.gif",
+      "summary": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required.",
+      "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
+      "category": "product",
+      "is_featured": true,
+      "author": {
+        "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/3HL3XeSAWxMShljVk8xB0o/222b539dbf628f89530dc13c68522d99/mn___profile_.png?w=96&h=96",
+        "first_name": "Meredith",
+        "last_name": "Johnson"
+      }
     },
     {
-      "id": 2,
-      "title": "GetStaticProps",
-      "author": "Static Site Generation"
+      "id": 3,
+      "title": "New Payment Links features to help you sell more, faster",
+      "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
+      "category": "product",
+      "is_featured": false,
+      "author": {
+        "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/3HL3XeSAWxMShljVk8xB0o/222b539dbf628f89530dc13c68522d99/mn___profile_.png?w=96&h=96",
+        "first_name": "Meredith",
+        "last_name": "Johnson"
+      }
     },
     {
       "id": 4,
-      "title": "GetServerSideProps",
-      "author": "Server Side Rendering"
+      "title": "New Payment Links features to help you sell more, faster",
+      "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
+      "category": "product",
+      "is_featured": false,
+      "author": {
+        "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/3HL3XeSAWxMShljVk8xB0o/222b539dbf628f89530dc13c68522d99/mn___profile_.png?w=96&h=96",
+        "first_name": "Meredith",
+        "last_name": "Johnson"
+      }
     },
     {
       "id": 5,
-      "title": "Static Incremental Regeneration",
-      "author": "Nextjs Team"
-    },
-    {
-      "id": 7,
-      "title": "Dynamic Parameters",
-      "author": "Nextjs"
+      "title": "New Payment Links features to help you sell more, faster",
+      "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
+      "category": "product",
+      "is_featured": false,
+      "author": {
+        "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/3HL3XeSAWxMShljVk8xB0o/222b539dbf628f89530dc13c68522d99/mn___profile_.png?w=96&h=96",
+        "first_name": "Meredith",
+        "last_name": "Johnson"
+      }
     }
-  ],
-  "products": [
-    {
-      "id": 18,
-      "name": "Nike Premium",
-      "price": 1020
-    },
-    {
-      "id": 17,
-      "name": "Nvidia GTX 1080",
-      "price": 1040
-    },
-    {
-      "id": 41,
-      "name": "Alpa Beta",
-      "price": 1600
-    },
-    {
-      "id": 1,
-      "name": "Strange Product",
-      "price": 1060
-    },
-    {
-      "id": 31,
-      "name": "some Game",
-      "price": 7100
-    },
-    {
-      "id": 21,
-      "name": "Killer Game",
-      "price": 2
-    }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

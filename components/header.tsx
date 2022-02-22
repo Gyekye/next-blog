@@ -2,6 +2,7 @@
 import {FC} from 'react';
 import Image from 'next/image';
 import Logo from '@public/svg/logo.svg';
+import Link from 'next/link';
 
 export const Header: FC = (): JSX.Element => {
 	return (
@@ -22,7 +23,11 @@ export const Header: FC = (): JSX.Element => {
 						<li className={`px-4 font-medium text-white transition duration-200 delay-150 ease-linear 
 					hover:text-black hover:cursor-pointer hover:text-secondary text-md uppercase text-opacity-60`}
 						>
-							Blog
+						<Link href={`blog/`}>
+							<a>
+								Blog
+							</a>
+						</Link>
 						</li >
 						<li className={`px-4 font-medium text-white transition duration-200 delay-150 ease-linear 
 					hover:text-black hover:cursor-pointer hover:text-secondary text-md uppercase text-opacity-60`}

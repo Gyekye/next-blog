@@ -30,7 +30,7 @@ const transition = {
 
 };
 
-export const Normal: FC<Props> = (): JSX.Element => {
+export const Normal: FC<Props> = ({feature}): JSX.Element => {
 	return (
 		<section
 			className={`hidden lg:block lg:w-full lg:h-[36rem] lg:flex justify-center items-center lg:bg-white`} >
