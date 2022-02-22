@@ -55,7 +55,7 @@ export const FeaturedPostCard: FunctionComponent<Props> = ({post}): JSX.Element 
 				</div >
 				<div className={`w-6/12 h-full relative`} >
 					<Image
-						className={`object-fill rounded-md`}
+						className={`object-contain rounded-md`}
 						src={post.image!}
 						alt={post.title}
 						layout={`fill`}

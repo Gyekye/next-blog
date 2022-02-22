@@ -55,6 +55,34 @@
         "first_name": "Yon",
         "last_name": "Yeow"
       }
+    },
+    {
+      "id": 15,
+      "title": "Indexing the creator economy",
+      "image": "https://images.ctfassets.net/fzn2n1nzq965/26NWFEtnpYtABY5byra0DV/1d4b8c3b70e38894fc2a9b9469c86f82/Stripe_Creator_Economy.png?w=1080&q=80&fm=webp",
+      "summary": "We indexed the creator economy by measuring the growth of creator platforms on Stripe. Creators are coming online at a record clip—from all around the world. More and more are earning a living wage doing what they do best.",
+      "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
+      "category": "product",
+      "is_featured": false,
+      "author": {
+        "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/6xRzbwbXNjVotWmRdV5JbV/eed90a0c35515d947defc29609137f08/edwin-wee.jpg?w=96&h=96",
+        "first_name": "Ewin",
+        "last_name": "Yee"
+      }
+    },
+    {
+      "id": 115,
+      "title": "Introducing the Payment Element",
+      "image": "https://images.ctfassets.net/fzn2n1nzq965/4oQvQ5j58g13qIkTozToHF/811af3d0202424d4b81dbe67296a5681/Stripe_Elements_source-code.gif",
+      "summary": "Today, we're introducing the Payment Element, an embeddable UI component for your checkout flow that supports 18 payment methods with a single integration. Optimize conversion without sacrificing customization by allowing your customers to pay how they want to pay—at a fraction of the engineering lift.",
+      "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
+      "category": "product",
+      "is_featured": false,
+      "author": {
+        "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/7aeKU7E8SEQFybnxWtnzvO/7f93af525aa815baefb267ffbd28b473/murray.jpeg?w=96&h=96",
+        "first_name": "Murray",
+        "last_name": "Chapman"
+      }
     }
   ]
 }

@@ -55,7 +55,7 @@ export const NormalPostCard: FunctionComponent<Post> = ({post}): JSX.Element => 
 				</div >
 				<div className={`w-5/12 h-full shadow-2xl  rounded-md relative`} >
 					<Image
-						className={`object-contain object-center rounded-md shadow-2xl`}
+						className={`object-fill object-center rounded-md shadow-2xl`}
 						src={post.image!}
 						alt={post.title}
 						layout={`fill`}
