@@ -6,7 +6,7 @@ import {GetStaticProps, InferGetStaticPropsType, NextPage} from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Blog: NextPage = ({posts, firstFeaturedPost}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
+const Blog: NextPage = ({posts, firstFeaturedPost, noFeaturedPost}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
 	return (
 		<>
 			<div className={`bg-background flex justify-center`} >
@@ -49,7 +49,9 @@ const Blog: NextPage = ({posts, firstFeaturedPost}: InferGetStaticPropsType<type
 							</button >
 						</div >
 					</nav >
-					<FeaturedPostCard post={firstFeaturedPost} />
+					{
+						!noFeaturedPost ? <FeaturedPostCard post={firstFeaturedPost} /> : <p>No Featured Post</p>
+					}
 					{
 						//* Renders post details if post data exist.
 						posts ? posts.map(
@@ -82,20 +84,29 @@ export const getStaticProps: GetStaticProps = async () => {
 		}
 	);
 
-	//* Then selects the first post item in the array.
-	const firstFeaturedPost = featuredPost[ 0 ];
+	if (featuredPost.length > 0) {
+		//* Then selects the first post item in the array.
+		const firstFeaturedPost = featuredPost[ 0 ];
+		return {
+			props: {
 
-	return {
+				//* Returns post as a prop to be passed into the Blog page.
+				posts,
+				firstFeaturedPost
+			},
+			//* ISR, revalidate props data every 2 seconds
+			revalidate: 1
+		};
 
-		//* Returns post as a prop to be passed into the Blog page.
-		props: {
-			posts,
-			firstFeaturedPost
-		},
-
-		//* ISR, revalidate props data every 2 seconds
-		revalidate: 2
-	};
+	} else {
+		//* If no featured Post exist return posts and a not notFound flag.
+		return {
+			props: {
+				posts,
+				noFeaturedPost: true
+			},
+		};
+	}
 };
 
 //! Exports Page
