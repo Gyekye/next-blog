@@ -8,14 +8,14 @@ import {FunctionComponent} from 'react';
 export const FeaturedPostCard: FunctionComponent<Props> = ({post}): JSX.Element => {
 	return (
 		<>
-			<article className={`w-full h-[26rem] p-4 my-20 flex bg-white rounded-lg z-10 shadow-2xl`} >
+			<article className={`h-[27rem] p-4 mt-[5rem] mb-[18rem] flex bg-white rounded-lg z-10 shadow-2xl`} >
 				<div className={`w-6/12 h-full p-5`} >
 					<p className={`text-primary pb-4 font-medium capitalize text-opacity-70 
 					hover:text-primaryDark hover:text-opacity-100 hover:cursor-pointer transition-all duration-150 delay-75 ease-linear`}
 					>
 						{post.category}
 					</p >
-					<h2 className={`text-4xl font-medium pb-4`} >{post.title}</h2 >
+					<h2 className={`text-4xl font-semibold pb-4`} >{post.title}</h2 >
 					<div className={`flex w-full items-center pb-4`} >
 						<div className={`w-10 h-10 relative mr-4`} >
 							<Image
@@ -35,7 +35,7 @@ export const FeaturedPostCard: FunctionComponent<Props> = ({post}): JSX.Element 
 							</p >
 						</div >
 					</div >
-					<p className={`text-md text-link pb-2`} >
+					<p className={`text-md text-black text-opacity-90 pb-2`} >
 						{post.summary}
 					</p >
 					<a href={'#'}
