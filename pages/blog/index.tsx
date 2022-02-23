@@ -7,16 +7,20 @@ import {GetStaticProps, InferGetStaticPropsType, NextPage} from 'next';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const Blog: NextPage = ({posts, firstFeaturedPost, noFeaturedPost}: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
+const Blog: NextPage = ({
+	                        posts,
+	                        firstFeaturedPost,
+	                        noFeaturedPost
+                        }: InferGetStaticPropsType<typeof getStaticProps>): JSX.Element => {
 	return (
 		<>
 			<div className={`bg-background flex flex-col items-center justify-center`} >
-				<div className={`w-7/12 flex flex-col border-x-2 border-x-border border-dashed`} >
-					<nav className={`w-full flex justify-between  border-b-2 border-b-border border-dashed`} >
+				<div className={`w-7/12 flex flex-col border-x border-x-border border-dashed`} >
+					<nav className={`w-full flex justify-between  border-b border-b-border border-dashed`} >
 						<div className={`flex items-center px-4`} >
 							<Image src={Logo} alt={'Logo'} />
 						</div >
-						<ul className={'py-6 px-8 flex items-center border-x-2 border-x-border border-dashed'} >
+						<ul className={'py-6 px-8 flex items-center border-x border-x-border border-dashed'} >
 							<li className={`pl-8 text-black font-medium transition duration-200 delay-150 ease-linear 
 					hover:text-black hover:cursor-pointer hover:text-opacity-100 text-md capitalize text-opacity-70`}
 							>
@@ -51,7 +55,7 @@ const Blog: NextPage = ({posts, firstFeaturedPost, noFeaturedPost}: InferGetStat
 						</div >
 					</nav >
 					{
-						!noFeaturedPost ? <FeaturedPostCard post={firstFeaturedPost} /> : <p>No Featured Post</p>
+						!noFeaturedPost ? <FeaturedPostCard post={firstFeaturedPost} /> : <p >No Featured Post</p >
 					}
 					{
 						//* Renders post details if post data exist.
@@ -81,9 +85,7 @@ export const getStaticProps: GetStaticProps = async () => {
 
 	//* Filters post array for featured post.
 	const featuredPost: Post[] = posts.filter(
-		(item: Post) => {
-			return item.is_featured;
-		}
+		(item: Post) => item.is_featured
 	);
 
 	if (featuredPost.length > 0) {

@@ -35,7 +35,7 @@
       "summary": "Stripe Tax is one of our most requested products by users to date. This post covers how we built a tax engine to help users determine their customers’ locations, calculate the right tax at checkout, and speed up filing and remittance.",
       "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
       "category": "Corporate",
-      "is_featured": false,
+      "is_featured": true,
       "author": {
         "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/5JXAEUYtHiprKGHDMyyycx/3f58cc268dc651ee66d785151b7162e4/kmoriarty.jpeg?w=96&h=96",
         "first_name": "Kelly",
@@ -77,7 +77,7 @@
       "summary": "Today, we're introducing the Payment Element, an embeddable UI component for your checkout flow that supports 18 payment methods with a single integration. Optimize conversion without sacrificing customization by allowing your customers to pay how they want to pay—at a fraction of the engineering lift.",
       "body": "Payment Links lets you create a payment page that you can share with your customers in just a few clicks—no code required. More than 100,000 businesses in 40+ countries have used Payment Links to launch their business, sell through new channels, and experiment with pricing. Since launching last year, we’ve added support for subscriptions, promotion codes, free trials, tax, phone number collection, upsells, setting store policies and contact info, and customizable confirmation pages. Today, we’re adding new no-code Payment Links features to help businesses increase revenue and introducing an API to automate workflows.",
       "category": "product",
-      "is_featured": true,
+      "is_featured": false,
       "author": {
         "profile_image": "https://images.ctfassets.net/fzn2n1nzq965/7aeKU7E8SEQFybnxWtnzvO/7f93af525aa815baefb267ffbd28b473/murray.jpeg?w=96&h=96",
         "first_name": "Murray",

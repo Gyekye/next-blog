@@ -48,7 +48,8 @@ export const FeaturedPostCard: FunctionComponent<Props> = ({post}): JSX.Element 
 							<UilAngleRight />
 						</div >
 						<div
-							className={'-translate-x-[31px] opacity-0 transition-all duration-100 delay-100 ease-linear group-hover:-translate-x-6 group-hover:opacity-100'} >
+							className={'-translate-x-[31px] opacity-0 transition-all duration-100 delay-100 ease-linear ' +
+								'group-hover:-translate-x-6 group-hover:opacity-100'} >
 							<UilArrowRight />
 						</div >
 					</a >

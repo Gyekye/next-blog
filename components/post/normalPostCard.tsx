@@ -8,7 +8,7 @@ import {FunctionComponent} from 'react';
 export const NormalPostCard: FunctionComponent<Post> = ({post}): JSX.Element => {
 	return (
 		<>
-			<article className={`h-[20rem] my-20 flex bg-transparent rounded-lg z-10`} >
+			<article className={`h-fit my-20 flex bg-transparent rounded-lg z-10 border-y border-y-border border-dashed`} >
 				<div className={`w-7/12 h-full p-5`} >
 					<p className={`text-primary pb-4 font-medium capitalize text-opacity-70 
 					hover:text-primaryDark hover:text-opacity-100 hover:cursor-pointer transition-all duration-150 delay-75 ease-linear`}
@@ -53,7 +53,7 @@ export const NormalPostCard: FunctionComponent<Post> = ({post}): JSX.Element => 
 						</div >
 					</a >
 				</div >
-				<div className={`w-5/12 h-full shadow-2xl  rounded-md relative`} >
+				<div className={`w-5/12 h-[18rem] shadow-2xl  rounded-md relative`} >
 					<Image
 						className={`object-center rounded-md shadow-2xl`}
 						src={post.image!}
