@@ -1,9 +1,9 @@
 import {Footer} from '@/components/footer';
 import {Header} from '@/components/header';
-import {End} from '@/components/Hero/end';
-import {Flipped} from '@/components/Hero/flipped';
-import {Main} from '@/components/Hero/main';
-import {Normal} from '@/components/Hero/normal';
+import {End} from '@/components/hero/end';
+import {Flipped} from '@/components/hero/flipped';
+import {Main} from '@/components/hero/main';
+import {Normal} from '@/components/hero/normal';
 import {motion} from 'framer-motion';
 import {NextPage} from 'next';
 
