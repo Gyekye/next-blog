@@ -38,7 +38,6 @@ export const Flipped: FC<Props> = (): JSX.Element => {
 					<Image
 						src={featuredPostImage}
 						alt={'Main Post'}
-						priority
 					/>
 				</div >
 				<motion.div initial={initialState} whileInView={InViewState} transition={transition}

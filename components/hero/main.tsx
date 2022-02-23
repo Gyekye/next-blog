@@ -54,7 +54,6 @@ export const Main: FC = (): JSX.Element => {
 					<Image
 						src={featuredPostImage}
 						alt={'Main Post'}
-						priority
 					/>
 				</motion.div >
 			</div >

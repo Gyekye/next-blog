@@ -80,7 +80,7 @@ const Blog: NextPage = ({
 export const getStaticProps: GetStaticProps = async () => {
 
 	//* Makes an api call to json-server to retrieve list of posts.
-	const response: Response = await fetch('http://localhost:4000/posts');
+	const response: Response = await fetch('  https://smart-vampirebat-0.loca.lt/posts');
 	const posts: Post[] = await response.json();
 
 	//* Filters post array for featured post.
